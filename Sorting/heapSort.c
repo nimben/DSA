@@ -18,10 +18,9 @@ void heapify(int arr[],int n,int i){
         arr[largest] = temp;
 
         heapify(arr, n, largest);
-    }
-      
-
+    }   
 }
+
 
 void heapsort(int arr[], int n){
     for (int i = n / 2 - 1; i >= 0; i--){
@@ -50,5 +49,4 @@ int main(){
     printf("Sorted Array: ");
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
-
 }
